@@ -1,0 +1,311 @@
+/* Your existing CSS styles here */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* New styles for the logo and navbar */
+.custom-navbar {
+    height: 100px;
+    /* Increase the height to your desired value */
+}
+
+.custom-navbar .navbar-brand img {
+    height: 80px;
+    /* Increase the height to match the height specified in the HTML */
+}
+
+/* Existing CSS styles */
+
+/* New styles for the content container */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+
+/* New styles for the breaking news section */
+.breaking-news-section {
+    flex: 0 0 calc(50% - 10px);
+    /* Adjust the width as needed */
+}
+
+/* New styles for the video section */
+.video-section {
+    flex: 0 0 calc(50% - 10px);
+    /* Adjust the width as needed */
+    position: relative;
+    /* Make the video position relative so it can be positioned within the section */
+    height: 80vh;
+    /* Set the height to the full viewport height */
+    overflow: hidden;
+    /* Hide the overflowing video */
+}
+
+.video-container {
+    /* Create a container for the video */
+    width: 100%;
+    /* Set the width of the container to 100% */
+    height: 100%;
+    /* Set the height of the container to 100% */
+    position: absolute;
+    /* Position the container absolutely within the section */
+    top: 0;
+    left: 0;
+    /* Position the video container at the top left corner of the section */
+    border-radius: 20px;
+    /* Add rounded corners to the container */
+    overflow: hidden;
+    /* Hide any overflowing content inside the container */
+}
+
+.video-container video {
+    /* Style the video element within the container */
+    width: 100%;
+    /* Set the width of the video to 100% of the container */
+    height: 100%;
+    /* Set the height of the video to 100% of the container */
+    object-fit: cover;
+    /* Use the "cover" value of object-fit to ensure the video covers the entire container while maintaining aspect ratio */
+    border-radius: 20px;
+    /* Add rounded corners to the video */
+}
+
+
+
+
+/* New styles for the main content container */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+
+/* New styles for the quote section */
+.quote-section {
+    flex: 0 0 calc(50% - 10px);
+    background-color: #f8f9fa;
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quote-heading {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.quote {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+
+/* New styles for the weather section */
+.weather-section {
+    flex: 0 0 calc(50% - 10px);
+    background-color: #f8f9fa;
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.weather-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.weather-form input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.weather-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.weather-form button:hover {
+    background-color: #0056b3;
+}
+
+#weather-info {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Styling for the news accordion */
+.card {
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #f8f9fa;
+}
+
+.card-header h2 {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.card-header button {
+    text-align: left;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.card-body {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.card-body a {
+    color: #007bff;
+}
+
+/* New styles for the subscribe section */
+.subscribe-section {
+    background-color: #007bff;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.subscribe-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.subscribe-section .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-section input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    outline: none;
+    color: #333;
+    background-color: #fff;
+}
+
+.subscribe-section input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-left: 10px;
+}
+
+.subscribe-section input[type="submit"]:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* images */
+.img-fluid {
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+/* Ensure all images in the same row have the same height */
+.row [class^="col"] {
+    display: flex;
+    flex-direction: column;
+}
+
+.row [class^="col"] img {
+    flex: 1;
+    object-fit: cover;
+    object-position: center;
+    height: 200px;
+    /* Adjust this value to your desired image height */
+    margin-bottom: 10px;
+}
+
+/* Add some spacing between the image and the heading */
+.row [class^="col"] h4 {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/* Add some spacing between the image and the heading */
+.row [class^="col"] h4 {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+/* Add some basic styling to the validation message */
+#validationMessage {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    display: none;
+    /* Hide the message by default */
+    color: #fff;
+    /* Set the text color to white */
+    padding: 10px;
+    /* Add some padding for better appearance */
+    text-align: center;
+    /* Center the text */
+    border-radius: 5px;
+    /* Add rounded corners to the message box */
+    width: 100%;
+    /* Make the message box fill the width of the container */
+    max-width: 300px;
+    /* Set a maximum width to prevent it from stretching too much */
+}
+
+#validationMessage.success {
+    background-color: #4caf50;
+    /* Green background for success message */
+    display: block;
+    /* Display the message when it's a success */
+}
+
+#validationMessage.error {
+    background-color: #f44336;
+    /* Red background for error message */
+    display: block;
+    /* Display the message when it's an error */
+}
+
+/* New styles for the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Rest of your existing CSS styles here */
